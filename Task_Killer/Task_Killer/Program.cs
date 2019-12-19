@@ -19,6 +19,14 @@ namespace Task_Killer
                 Console.WriteLine("Не корректно введеное значение");
             }
         }*/
+        public static void AvailableNotes() 
+        {
+            string[] allfiles = Directory.GetFiles("Macintosh HD/Users/DenisValeev/Documents/Programming/Task_Killer/Notes", ".txt", SearchOption.AllDirectories);
+                foreach (string filename in allfiles)
+                    {
+                        Console.WriteLine(filename);
+                    }
+        }
 
         public static void CreateNote()
 		{
@@ -26,16 +34,23 @@ namespace Task_Killer
 			string note_name=Console.ReadLine();
 			Console.WriteLine("Заметка");
 			string note_text=Console.ReadLine();
-            string way = "/Users/DenisValeev/Documents/Programming/Task_Killer/" + note_name + ".txt";
+            string way = "" + note_name + ".txt"; // Users\DenisValeev\Documents\Programming\Task_Killer\Notes\
             File.WriteAllText(way, note_name +"\n"+ note_text);
 		}
+
+        public static void DeleteNote()
+        {
+            Console.WriteLine("Введите название заметки для удаления");
+            string delete_note_name=Console.ReadLine();
+            string delete_way = "DenisValeev/Documents/Programming/Task_Killer/Notes/" + delete_note_name + ".txt";
+            File.Delete(delete_way);
+        }
 
         static void Main(string[] args)
         {
             List<User> Users = new List<User>()
-            {new User("Sam", "Yosem", 18, "login", "pass12345"),
+            {new User("Sam", "Yosemite", 18, "login", "pass12345"),
             new User("Bugs", "Bunny", 15, "login1", "qwerty")};
-            Console.WriteLine();
 
 
             Console.WriteLine("Введите цифру соответствующую нужной функции \n Нажмите 1 для входа \n Нажмите 2 для регистрации");
@@ -61,7 +76,7 @@ namespace Task_Killer
             }
             do
             {
-                Console.WriteLine("Для создания, просмотра или редактированиея заметки нажмите 1 \nНажмите 2 для создания задачи на день");
+                Console.WriteLine("Для создания, просмотра или редактированиея заметки нажмите 1 \nНажмите 2 для создания задачи на день \nДля удаления заметки нажмите 3");
                 string Function1 = Console.ReadLine();
                 switch (Function1)
                 {
@@ -71,17 +86,23 @@ namespace Task_Killer
                     case ("2"):
                         
                         break;
+                    case ("3"):
+                        Console.WriteLine("Доступные заметки");
+                        string[] allfiles = Directory.GetFiles("Macintosh HD/Users/DenisValeev/Documents/Programming/Task_Killer/Notes", ".txt", SearchOption.AllDirectories);
+                        foreach (string filename in allfiles)
+                        {
+                            Console.WriteLine(filename);
+                        }
+                        DeleteNote();
+                        break;
                     default:
                         Console.WriteLine("Команда введена не правильно");
                         break;
                 }
-                Console.Write("Нажмите любую клавишу для повтора или ESC чтобы выйти");
+                Console.WriteLine("Нажмите любую клавишу для повтора или ESC чтобы выйти");
             } while (Console.ReadKey().Key != ConsoleKey.Escape);
-
-            foreach (User u in Users)
-            {
-                Console.WriteLine(u._name);
-            }
+            
+        
 
         }
     }
