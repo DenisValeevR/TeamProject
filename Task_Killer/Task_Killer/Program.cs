@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 using System.IO;
 
 namespace Task_Killer
@@ -12,20 +14,42 @@ namespace Task_Killer
             if (!String.IsNullOrEmpty(st))
             {
                 string[] par = st.Split(" ");
-                 //Использовать кортеж на возврат или массив?
             }
             else 
             {
                 Console.WriteLine("Не корректно введеное значение");
             }
         }*/
+
+        public static void CreateTask()
+        {   
+            using (FileStream fs = new FileStream("/Users/DenisValeev/Documents/Programming/Task_Killer/Tasks.txt", FileMode.OpenOrCreate))
+            {
+                Console.WriteLine("Текущие задачи");
+                using (StreamReader sr = new StreamReader (fs))
+                {
+                    Console.WriteLine(sr.ReadToEnd());
+                }
+                Console.WriteLine("Записать новую задачу? Нажмите enter для новой задачи или любую другую кнопку для отмены");
+                if (Console.ReadKey().Key == ConsoleKey.Enter)
+                {
+                    using (StreamWriter sw = new StreamWriter (fs))
+                    {
+                        Console.WriteLine("Введите задачу");
+                        string line = Console.ReadLine();
+                        sw.Write(line);
+                    }
+                }
+            }
+        }
+
         public static void AvailableNotes() 
         {
-            string[] allfiles = Directory.GetFiles("Macintosh HD/Users/DenisValeev/Documents/Programming/Task_Killer/Notes", ".txt", SearchOption.AllDirectories);
-                foreach (string filename in allfiles)
-                    {
-                        Console.WriteLine(filename);
-                    }
+            string[] allfiles = Directory.GetFiles("/Users/DenisValeev/Documents/Programming/Task_Killer/Notes", "*.txt", SearchOption.AllDirectories);
+            foreach (string filename in allfiles)
+                {
+                    Console.WriteLine(filename);
+                }
         }
 
         public static void CreateNote()
@@ -42,7 +66,7 @@ namespace Task_Killer
         {
             Console.WriteLine("Введите название заметки для удаления");
             string delete_note_name=Console.ReadLine();
-            string delete_way = "DenisValeev/Documents/Programming/Task_Killer/Notes/" + delete_note_name + ".txt";
+            string delete_way = "Users/DenisValeev/Documents/Programming/Task_Killer/Notes/" + delete_note_name + ".txt";
             File.Delete(delete_way);
         }
 
@@ -76,23 +100,22 @@ namespace Task_Killer
             }
             do
             {
-                Console.WriteLine("Для создания, просмотра или редактированиея заметки нажмите 1 \nНажмите 2 для создания задачи на день \nДля удаления заметки нажмите 3");
+                Console.WriteLine("Для создания, просмотра или редактированиея заметки нажмите 1 \nНажмите 2 для создания или редактирования задачи на день \nДля удаления заметки нажмите 3");
                 string Function1 = Console.ReadLine();
                 switch (Function1)
                 {
                     case ("1"):
+                        
                         CreateNote();
                         break;
                     case ("2"):
-                        
+                        CreateTask();
+
+
                         break;
                     case ("3"):
                         Console.WriteLine("Доступные заметки");
-                        string[] allfiles = Directory.GetFiles("Macintosh HD/Users/DenisValeev/Documents/Programming/Task_Killer/Notes", ".txt", SearchOption.AllDirectories);
-                        foreach (string filename in allfiles)
-                        {
-                            Console.WriteLine(filename);
-                        }
+                        AvailableNotes();
                         DeleteNote();
                         break;
                     default:
