@@ -1,0 +1,35 @@
+/Users/DenisValeev/Documents/Programming/Task_Killer/obj/Debug/netcoreapp3.0/Task_Killer.csprojAssemblyReference.cache
+/Users/DenisValeev/Documents/Programming/Task_Killer/obj/Debug/netcoreapp3.0/Task_Killer.AssemblyInfoInputs.cache
+/Users/DenisValeev/Documents/Programming/Task_Killer/obj/Debug/netcoreapp3.0/Task_Killer.AssemblyInfo.cs
+/Users/DenisValeev/Documents/Programming/Task_Killer/bin/Debug/netcoreapp3.0/Task_Killer
+/Users/DenisValeev/Documents/Programming/Task_Killer/bin/Debug/netcoreapp3.0/Task_Killer.deps.json
+/Users/DenisValeev/Documents/Programming/Task_Killer/bin/Debug/netcoreapp3.0/Task_Killer.runtimeconfig.json
+/Users/DenisValeev/Documents/Programming/Task_Killer/bin/Debug/netcoreapp3.0/Task_Killer.runtimeconfig.dev.json
+/Users/DenisValeev/Documents/Programming/Task_Killer/bin/Debug/netcoreapp3.0/Task_Killer.dll
+/Users/DenisValeev/Documents/Programming/Task_Killer/bin/Debug/netcoreapp3.0/Task_Killer.pdb
+/Users/DenisValeev/Documents/Programming/Task_Killer/obj/Debug/netcoreapp3.0/Task_Killer.dll
+/Users/DenisValeev/Documents/Programming/Task_Killer/obj/Debug/netcoreapp3.0/Task_Killer.pdb
+C:\Users\Annen\OneDrive\Рабочий стол\C#\Task_Killer\bin\Debug\netcoreapp3.0\Task_Killer.exe
+C:\Users\Annen\OneDrive\Рабочий стол\C#\Task_Killer\bin\Debug\netcoreapp3.0\Task_Killer.deps.json
+C:\Users\Annen\OneDrive\Рабочий стол\C#\Task_Killer\bin\Debug\netcoreapp3.0\Task_Killer.runtimeconfig.json
+C:\Users\Annen\OneDrive\Рабочий стол\C#\Task_Killer\bin\Debug\netcoreapp3.0\Task_Killer.runtimeconfig.dev.json
+C:\Users\Annen\OneDrive\Рабочий стол\C#\Task_Killer\bin\Debug\netcoreapp3.0\Task_Killer.dll
+C:\Users\Annen\OneDrive\Рабочий стол\C#\Task_Killer\bin\Debug\netcoreapp3.0\Task_Killer.pdb
+C:\Users\Annen\OneDrive\Рабочий стол\C#\Task_Killer\obj\Debug\netcoreapp3.0\Task_Killer.csprojAssemblyReference.cache
+C:\Users\Annen\OneDrive\Рабочий стол\C#\Task_Killer\obj\Debug\netcoreapp3.0\Task_Killer.AssemblyInfoInputs.cache
+C:\Users\Annen\OneDrive\Рабочий стол\C#\Task_Killer\obj\Debug\netcoreapp3.0\Task_Killer.AssemblyInfo.cs
+C:\Users\Annen\OneDrive\Рабочий стол\C#\Task_Killer\obj\Debug\netcoreapp3.0\Task_Killer.dll
+C:\Users\Annen\OneDrive\Рабочий стол\C#\Task_Killer\obj\Debug\netcoreapp3.0\Task_Killer.pdb
+C:\Users\Annen\OneDrive\Рабочий стол\C#\TeamProject\Task_Killer\bin\Debug\netcoreapp3.0\Task_Killer.exe
+C:\Users\Annen\OneDrive\Рабочий стол\C#\TeamProject\Task_Killer\bin\Debug\netcoreapp3.0\Task_Killer.deps.json
+C:\Users\Annen\OneDrive\Рабочий стол\C#\TeamProject\Task_Killer\bin\Debug\netcoreapp3.0\Task_Killer.runtimeconfig.json
+C:\Users\Annen\OneDrive\Рабочий стол\C#\TeamProject\Task_Killer\bin\Debug\netcoreapp3.0\Task_Killer.runtimeconfig.dev.json
+C:\Users\Annen\OneDrive\Рабочий стол\C#\TeamProject\Task_Killer\bin\Debug\netcoreapp3.0\Task_Killer.dll
+C:\Users\Annen\OneDrive\Рабочий стол\C#\TeamProject\Task_Killer\bin\Debug\netcoreapp3.0\Task_Killer.pdb
+C:\Users\Annen\OneDrive\Рабочий стол\C#\TeamProject\Task_Killer\obj\Debug\netcoreapp3.0\Task_Killer.csprojAssemblyReference.cache
+C:\Users\Annen\OneDrive\Рабочий стол\C#\TeamProject\Task_Killer\obj\Debug\netcoreapp3.0\Task_Killer.AssemblyInfoInputs.cache
+C:\Users\Annen\OneDrive\Рабочий стол\C#\TeamProject\Task_Killer\obj\Debug\netcoreapp3.0\Task_Killer.AssemblyInfo.cs
+C:\Users\Annen\OneDrive\Рабочий стол\C#\TeamProject\Task_Killer\obj\Debug\netcoreapp3.0\Task_Killer.dll
+C:\Users\Annen\OneDrive\Рабочий стол\C#\TeamProject\Task_Killer\obj\Debug\netcoreapp3.0\Task_Killer.pdb
+C:\Users\Annen\OneDrive\Рабочий стол\C#\TeamProject\Task_Killer\bin\Debug\netcoreapp3.0\Newtonsoft.Json.dll
+C:\Users\Annen\OneDrive\Рабочий стол\C#\TeamProject\Task_Killer\obj\Debug\netcoreapp3.0\Task_Killer.csproj.CopyComplete
